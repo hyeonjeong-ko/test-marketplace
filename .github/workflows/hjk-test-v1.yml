@@ -19,4 +19,6 @@ jobs:
         input-param: "Hello, GitHub Action!"
     
     - name: Run Python script
-      run: python my_script.py
+      run: |
+        python my_script.py
+        # Add any additional commands or scripts you want to run here
