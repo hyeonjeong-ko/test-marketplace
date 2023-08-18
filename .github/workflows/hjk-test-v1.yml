@@ -14,9 +14,9 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Run hjk-test-v1 action
-      uses: hyeonjeong-ko/packiging-test@1.1
+      uses: hyeonjeong-ko/packiging-test@1.2
       with:
-        input-param: "Hello, GitHub Action!"
+        test-variable: "환경변수 테스트를 해보자~!!!하이!"
     
     - name: Run Python script
       run: |
