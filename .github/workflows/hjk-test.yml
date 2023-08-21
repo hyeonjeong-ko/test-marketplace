@@ -46,3 +46,4 @@ jobs:
         COMMIT_MESSAGE: $COMMIT_MESSAGE
         FROM_BRANCH: $FROM_BRANCH
         TO_BRANCH: $TO_BRANCH
+        REPO_URL: "https://github.com/$USER_NAME/${{ github.repository }}"
