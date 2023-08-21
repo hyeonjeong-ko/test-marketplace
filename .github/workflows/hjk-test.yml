@@ -13,36 +13,36 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set User Information
-      if: github.event_name == 'push'
-      id: user_info_push
-      run: |
-        USER_NAME=$(git log -1 --pretty=format:'%an')
-        COMMIT_TIME=$(git log -1 --pretty=format:'%ci')
-        COMMIT_MESSAGE=$(git log -1 --pretty=format:'%s')
-        FROM_BRANCH=$(git symbolic-ref --short HEAD)  # Get the current branch name
-        TO_BRANCH=${GITHUB_REF#refs/heads/}  # Remove the "refs/heads/" prefix from GITHUB_REF
-        echo "USER_NAME=$USER_NAME" >> $GITHUB_ENV
-        echo "COMMIT_TIME=$COMMIT_TIME" >> $GITHUB_ENV
-        echo "COMMIT_MESSAGE=$COMMIT_MESSAGE" >> $GITHUB_ENV
-        echo "FROM_BRANCH=$FROM_BRANCH" >> $GITHUB_ENV
-        echo "TO_BRANCH=$TO_BRANCH" >> $GITHUB_ENV
+    # - name: Set User Information
+    #   if: github.event_name == 'push'
+    #   id: user_info_push
+    #   run: |
+    #     USER_NAME=$(git log -1 --pretty=format:'%an')
+    #     COMMIT_TIME=$(git log -1 --pretty=format:'%ci')
+    #     COMMIT_MESSAGE=$(git log -1 --pretty=format:'%s')
+    #     FROM_BRANCH=$(git symbolic-ref --short HEAD)  # Get the current branch name
+    #     TO_BRANCH=${GITHUB_REF#refs/heads/}  # Remove the "refs/heads/" prefix from GITHUB_REF
+    #     echo "USER_NAME=$USER_NAME" >> $GITHUB_ENV
+    #     echo "COMMIT_TIME=$COMMIT_TIME" >> $GITHUB_ENV
+    #     echo "COMMIT_MESSAGE=$COMMIT_MESSAGE" >> $GITHUB_ENV
+    #     echo "FROM_BRANCH=$FROM_BRANCH" >> $GITHUB_ENV
+    #     echo "TO_BRANCH=$TO_BRANCH" >> $GITHUB_ENV
       
     - name: Run hjk-test-v1 action
-      uses: hyeonjeong-ko/packiging-test@3.8
+      uses: hyeonjeong-ko/packiging-test@3.9
       with:
-        test-variable: "이제 토큰재발급후에도 잘 되는지 테스트2번째"
+        test-variable: "도커말고 복합으로 해보자....!"
         send-to-function: "send_to_me"
         rest-api-key: "152831f2d43d3d3c3b003a24ec2fa088"
         redirect-uri: "https://localhost:3000"
-        code-key: "xFZZsRGwQA6-6mQvEyLTa3T4P_-Av-Vf38zBz1bte_qZ2wvceswQZ2m5HwfnsJ5qt93JfQorDKYAAAGKFvGVBQ"
+        code-key: "xkhp8coJ0iMXpFCHw2_7O-ZWc9LFEU9Te5btUb_3CShHGp5DSYzhtyXLmX0O4qX0vZ1pqgo9c5oAAAGKFz14Mg"
         msg-template: "text"
 
         
-        event_name: ${{ github.event_name }}
-        MERGED_STATUS: ${{ github.event.pull_request.merged }}
-        USER_NAME: $USER_NAME
-        COMMIT_TIME: $COMMIT_TIME
-        COMMIT_MESSAGE: $COMMIT_MESSAGE
-        FROM_BRANCH: $FROM_BRANCH
-        TO_BRANCH: $TO_BRANCH
+        # event_name: ${{ github.event_name }}
+        # MERGED_STATUS: ${{ github.event.pull_request.merged }}
+        # USER_NAME: $USER_NAME
+        # COMMIT_TIME: $COMMIT_TIME
+        # COMMIT_MESSAGE: $COMMIT_MESSAGE
+        # FROM_BRANCH: $FROM_BRANCH
+        # TO_BRANCH: $TO_BRANCH
