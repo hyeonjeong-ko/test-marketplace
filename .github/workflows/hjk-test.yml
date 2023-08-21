@@ -43,6 +43,7 @@ jobs:
         refresh-token: "RwJDAjQ5dtHNXRoCaCzgSnGXjSW79NZ4avxh4iD1Cj11GgAAAYoX6fuW"
         msg-template: "feed"
         repo-url: "https://github.com/hyeonjeong-ko/test-marketplace"
+        existing-context: $EXISTING_CONTEXT
         
         event_name: ${{ github.event_name }}
         MERGED_STATUS: ${{ github.event.pull_request.merged }}
@@ -51,4 +52,4 @@ jobs:
         COMMIT_MESSAGE: $COMMIT_MESSAGE
         FROM_BRANCH: $FROM_BRANCH
         TO_BRANCH: $TO_BRANCH
-        EXISTING_CONTEXT: $EXISTING_CONTEXT
+        
