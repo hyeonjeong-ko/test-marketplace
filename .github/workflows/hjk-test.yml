@@ -29,7 +29,7 @@ jobs:
     #     echo "TO_BRANCH=$TO_BRANCH" >> $GITHUB_ENV
       
     - name: Run hjk-test-v1 action
-      uses: hyeonjeong-ko/packiging-test@4.5
+      uses: hyeonjeong-ko/packiging-test@4.6
       with:
         test-variable: "도커말고 복합으로 해보자....!"
         send-to-function: "send_to_me"
