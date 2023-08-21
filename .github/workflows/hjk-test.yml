@@ -35,7 +35,7 @@ jobs:
         send-to-function: "send_to_me"
         rest-api-key: "152831f2d43d3d3c3b003a24ec2fa088"
         redirect-uri: "https://localhost:3000"
-        code-key: "Vs6XAAyQlLRamBdp1eCd7mh5eIwPIkLwDEQBQySrzEha4MHOa4wbRT-BiONUsEmjp1UFpgopyV8AAAGKFskQ_w"
+        code-key: "czzuLyJsPMa76SnhA2y3gXz9WMxNifGFVE4GAG4nJzNTxfJWhThaPbFNaKamCJvV1vXnHAo9dZwAAAGKFtI4xA"
         msg_template: "text"
 
         
