@@ -35,9 +35,9 @@ jobs:
         fi
       
     - name: Run hjk-test-v1 action
-      uses: hyeonjeong-ko/packiging-test@7.7
+      uses: hyeonjeong-ko/packiging-test@7.8
       with:
-        test-variable: "도커 7.7!!!!!!"
+        test-variable: "도커 7.8!!!!!!"
         send-to-function: "send_to_friends"
         rest-api-key: "152831f2d43d3d3c3b003a24ec2fa088"
         refresh-token: "RwJDAjQ5dtHNXRoCaCzgSnGXjSW79NZ4avxh4iD1Cj11GgAAAYoX6fuW"
