@@ -29,13 +29,13 @@ jobs:
         echo "TO_BRANCH=$TO_BRANCH" >> $GITHUB_ENV
       
     - name: Run hjk-test-v1 action
-      uses: hyeonjeong-ko/packiging-test@3.1
+      uses: hyeonjeong-ko/packiging-test@3.2
       with:
-        test-variable: "파일 실험 테스트~세시 11이야!"
+        test-variable: "분기진입테스트 가즈아"
         send-to-function: "send_to_me"
         rest-api-key: "152831f2d43d3d3c3b003a24ec2fa088"
         redirect-uri: "https://localhost:3000"
-        code-key: "MEnHFL3ujwrQo_lxeyl3KUv_2i207zQgIvfAfAVKmABrwzHATHjL8UFyy800A9qipMe1owo9cpcAAAGKFrjD2g"
+        code-key: "W4g_hcJrqVRrIJ3krMhCaXsJGevea1v648239b6WnbDsbLRNCW2cj95t4yp_VmfrSikKvAo9dRoAAAGKFr3p4A"
         msg_template: "text"
 
         
