@@ -31,11 +31,11 @@ jobs:
     - name: Run hjk-test-v1 action
       uses: hyeonjeong-ko/packiging-test@3.1
       with:
-        test-variable: "파일 실험 테스트~세시 오분이야!"
+        test-variable: "파일 실험 테스트~세시 11이야!"
         send-to-function: "send_to_me"
         rest-api-key: "152831f2d43d3d3c3b003a24ec2fa088"
         redirect-uri: "https://localhost:3000"
-        code-key: "Nus3pAdebu_FPsVUiqzSwaey4-vvIbHMFHrIoy5CPsJSgJ7Pz0LdcxyORqCP5yZtp5Ot8Ao9dNkAAAGKFrHxtg"
+        code-key: "MEnHFL3ujwrQo_lxeyl3KUv_2i207zQgIvfAfAVKmABrwzHATHjL8UFyy800A9qipMe1owo9cpcAAAGKFrjD2g"
         msg_template: "text"
 
         
