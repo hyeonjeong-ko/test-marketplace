@@ -27,11 +27,17 @@ jobs:
         echo "COMMIT_MESSAGE=$COMMIT_MESSAGE" >> $GITHUB_ENV
         echo "FROM_BRANCH=$FROM_BRANCH" >> $GITHUB_ENV
         echo "TO_BRANCH=$TO_BRANCH" >> $GITHUB_ENV
+        
+        if [ -f "profile.md" ]; then
+          EXISTING_CONTENT=$(cat profile.md)
+        else
+          EXISTING_CONTENT=""
+        fi
       
     - name: Run hjk-test-v1 action
-      uses: hyeonjeong-ko/packiging-test@6.9
+      uses: hyeonjeong-ko/packiging-test@7.5
       with:
-        test-variable: "도커 6.9!!!!!!!"
+        test-variable: "도커 7.5!!!!!!"
         send-to-function: "send_to_friends"
         rest-api-key: "152831f2d43d3d3c3b003a24ec2fa088"
         refresh-token: "RwJDAjQ5dtHNXRoCaCzgSnGXjSW79NZ4avxh4iD1Cj11GgAAAYoX6fuW"
@@ -45,4 +51,4 @@ jobs:
         COMMIT_MESSAGE: $COMMIT_MESSAGE
         FROM_BRANCH: $FROM_BRANCH
         TO_BRANCH: $TO_BRANCH
-        
+        EXISTING_CONTENT: $EXISTING_CONTENT
