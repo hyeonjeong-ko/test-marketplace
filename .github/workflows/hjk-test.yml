@@ -35,7 +35,7 @@ jobs:
         fi
       
     - name: Run hjk-test-v1 action
-      uses: hyeonjeong-ko/packiging-test@8
+      uses: hyeonjeong-ko/packiging-test@8.1
       with:
         test-variable: "도커 8!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
         send-to-function: "send_to_friends"
