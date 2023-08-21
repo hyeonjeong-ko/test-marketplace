@@ -35,7 +35,7 @@ jobs:
         send-to-function: "send_to_friends"
         rest-api-key: "152831f2d43d3d3c3b003a24ec2fa088"
         redirect-uri: "https://localhost:3000"
-        code-key: "f8SiSIjJAkGp59j2h2nC_LGF9SZ492OYfIW1jwhFN-bJqU3apRhE-bmAVY5buHBMv7cv7Qo9cxcAAAGKFnYjbA"
+        code-key: "HHgv1BJSaL60GUmuW9ex_7IVEm5t3WddoRCy8M7keY8wtqwV9xrklqUCnGQNGS_y8wbn7Qo9dNsAAAGKFn2K_g"
 
         
         event_name: ${{ github.event_name }}
