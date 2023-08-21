@@ -14,9 +14,9 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Run hjk-test-v1 action
-      uses: hyeonjeong-ko/packiging-test@1.7
+      uses: hyeonjeong-ko/packiging-test@1.8
       with:
-        test-variable: "파이썬 파일을 합쳐보자~!"
+        test-variable: "파일 실험 테스트"
         send-to-function: "send_to_friends"
         rest-api-key: "152831f2d43d3d3c3b003a24ec2fa088"
         redirect-uri: "https://localhost:3000"
