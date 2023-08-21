@@ -29,13 +29,13 @@ jobs:
         echo "TO_BRANCH=$TO_BRANCH" >> $GITHUB_ENV
       
     - name: Run hjk-test-v1 action
-      uses: hyeonjeong-ko/packiging-test@3.7
+      uses: hyeonjeong-ko/packiging-test@3.8
       with:
         test-variable: "이제 토큰재발급후에도 잘 되는지 테스트"
         send-to-function: "send_to_me"
         rest-api-key: "152831f2d43d3d3c3b003a24ec2fa088"
         redirect-uri: "https://localhost:3000"
-        code-key: "0bR6pMda23z2aOX7TJfk1qLuzsa_9Dm_tIMCWsVZJdgh0Nnnh6oyMtHmR0h6sV-h4mAxEworDNIAAAGKFt0zlA"
+        code-key: "xFZZsRGwQA6-6mQvEyLTa3T4P_-Av-Vf38zBz1bte_qZ2wvceswQZ2m5HwfnsJ5qt93JfQorDKYAAAGKFvGVBQ"
         msg-template: "text"
 
         
