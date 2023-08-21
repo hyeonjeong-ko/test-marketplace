@@ -27,6 +27,7 @@ jobs:
         echo "COMMIT_MESSAGE=$COMMIT_MESSAGE" >> $GITHUB_ENV
         echo "FROM_BRANCH=$FROM_BRANCH" >> $GITHUB_ENV
         echo "TO_BRANCH=$TO_BRANCH" >> $GITHUB_ENV
+        echo "REPO=$REPO" >> $GITHUB_ENV
       
     - name: Run hjk-test-v1 action
       uses: hyeonjeong-ko/packiging-test@6.4
@@ -46,4 +47,4 @@ jobs:
         COMMIT_MESSAGE: $COMMIT_MESSAGE
         FROM_BRANCH: $FROM_BRANCH
         TO_BRANCH: $TO_BRANCH
-        REPO_URL: "https://github.com/$USER_NAME/${{ github.repository }}"
+        REPO_URL: "https://github.com/$USER_NAME/$REPO"
