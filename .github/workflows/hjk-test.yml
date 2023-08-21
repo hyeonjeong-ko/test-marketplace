@@ -29,9 +29,9 @@ jobs:
         echo "TO_BRANCH=$TO_BRANCH" >> $GITHUB_ENV
         
         if [ -f "profile.md" ]; then
-          EXISTING_CONTENT=$(cat profile.md)
+          EXISTING_CONTEXT=$(cat profile.md)
         else
-          EXISTING_CONTENT=""
+          EXISTING_CONTEXT=""
         fi
       
     - name: Run hjk-test-v1 action
